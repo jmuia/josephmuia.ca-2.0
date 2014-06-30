@@ -1,0 +1,195 @@
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.header {
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	position: fixed;
+	height: 200px;
+	width: 100%;
+	min-height: 50px;
+	max-height: 200px;
+	background-position: 50% 65%;
+}
+
+.header .title {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	padding-left: 10%;
+	padding-bottom: 5px;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+
+.header .overlay {
+	position: relative;
+	top: 0px;
+	height: 200px;
+	width: 100%;
+	min-height: 50px;
+	max-height: 200px;
+	background-color: rgb(137, 190, 238);
+	opacity: 0;
+}
+
+.content {
+	padding-top: 200px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.summary {
+	font-size: 1.2em;
+}
+
+.section-icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
+.education { background-image: url(../img/graduation_cap.svg); }
+
+.tech { background-image: url(../img/coding.png); }
+
+.linkedin { background-image: url(../img/linkedin.png); }
+
+.github { background-image: url(../img/github.png); }
+
+.section {
+	margin-top: 26px;
+}
+
+.section a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.section a:hover, .section a:active {
+	color: #CCC;
+}
+
+.link {
+	background-image: url(../img/link.png);
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+
+.section a:hover .link, .section a:active .link {
+	background-image: url(../img/link_hover.png);
+}
+
+.section-content {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 40px;
+    padding-left: 30px;
+}
+
+.section-header {
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+.section-time {
+	font-size: 0.8em;
+}
+
+.gap {
+	height: 10px;
+	width: 100%;
+}
+
+.footer {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	color: #CCC;
+}
+
+/* Accomodate larger screens #mobilefirst */
+@media (min-width:641px) {
+	.summary {
+		font-size: 1.7em;
+	}
+
+	.header {
+		max-height: 350px;
+		min-height: 75px;
+	}
+
+	.header .overlay {
+		max-height: 350px;
+		min-height: 75px;
+	}
+
+	.header .title {
+		font-size: 2.5em;
+		padding-bottom: 10px;
+	}
+
+	.content {
+		padding-top: 350px;
+	}
+
+	.section-header {
+		font-size: 1.7em;
+	}
+
+	.section-content {
+		min-height: 200px;
+	}
+
+	.section-time {
+		font-size: 0.8em;
+	}
+
+	.section-icon {
+		float: left;
+		width: 150px;
+		height: 150px;
+		margin: 25px 25px 25px 0;
+	}
+}
+
+@media (min-width:1025px) {
+	.summary {
+		font-size: 2em;
+	}
+
+	.header {
+		max-height: 500px;
+		min-height: 100px;
+	}
+
+	.header .overlay {
+		max-height: 500px;
+		min-height: 100px;
+	}
+
+	.header .title {
+		font-size: 3em;
+		padding-bottom: 15px;
+	}
+
+	.content {
+		padding-top: 500px;
+	}
+
+	.section-header {
+		font-size: 2em;
+	}
+}
